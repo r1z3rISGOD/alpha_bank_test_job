@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/alpha_bank_test_job/static/css/main.0f2c7b34.css",
+    "main.js": "/alpha_bank_test_job/static/js/main.428bb8ab.js",
+    "index.html": "/alpha_bank_test_job/index.html",
+    "main.0f2c7b34.css.map": "/alpha_bank_test_job/static/css/main.0f2c7b34.css.map",
+    "main.428bb8ab.js.map": "/alpha_bank_test_job/static/js/main.428bb8ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f2c7b34.css",
+    "static/js/main.428bb8ab.js"
+  ]
+}
