@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 import './App.css';
-import {useAppDispatch} from "../../app/hooks";
+import {useAppDispatch} from "../../store/hooks";
 import {photoApi} from "../../utils/fetchData";
-import {actions} from "../../app/actions";
+import {actions} from "../../store/actions";
 import {CardList} from "../CardList/CardList";
 
 export const App = () => {
