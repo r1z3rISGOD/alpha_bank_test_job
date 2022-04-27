@@ -9,6 +9,14 @@
 
 .ReactVirtualized__List {
     width: 372px !important;
+    padding-top: 25px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.ReactVirtualized__List::-webkit-scrollbar {
+    width: 0;
 }
 
 .card_list__filter {

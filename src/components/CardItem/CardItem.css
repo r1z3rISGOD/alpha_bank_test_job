@@ -1,7 +1,7 @@
 .card_item {
-    border: 2px solid black;
+    border: 1px solid black;
     margin-bottom: 15px;
-    width: 350px !important;
+    width: 370px !important;
     height: 480px !important;
     border-radius: 5px;
 }
@@ -11,7 +11,7 @@
 }
 
 .card_item__img {
-    width: 350px;
+    width: 370px;
     height: 400px;
     border-radius: 5px;
 }
@@ -26,7 +26,14 @@
 
 .card_item__remove {
     color: red;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 95.939 95.939' style='enable-background:new 0 0 95.939 95.939;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M62.819,47.97l32.533-32.534c0.781-0.781,0.781-2.047,0-2.828L83.333,0.586C82.958,0.211,82.448,0,81.919,0 c-0.53,0-1.039,0.211-1.414,0.586L47.97,33.121L15.435,0.586c-0.75-0.75-2.078-0.75-2.828,0L0.587,12.608 c-0.781,0.781-0.781,2.047,0,2.828L33.121,47.97L0.587,80.504c-0.781,0.781-0.781,2.047,0,2.828l12.02,12.021 c0.375,0.375,0.884,0.586,1.414,0.586c0.53,0,1.039-0.211,1.414-0.586L47.97,62.818l32.535,32.535 c0.375,0.375,0.884,0.586,1.414,0.586c0.529,0,1.039-0.211,1.414-0.586l12.02-12.021c0.781-0.781,0.781-2.048,0-2.828L62.819,47.97 z'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
     top: 0;
+    background-color: white;
+    border-radius: 2px;
     cursor: pointer;
 }
 
@@ -42,8 +49,4 @@
 
 .card_item__toggle_like-active {
     filter: invert(0%) sepia(0%) hue-rotate(15deg) saturate(630%) brightness(100%)
-}
-
-.card_item__description {
-
 }
