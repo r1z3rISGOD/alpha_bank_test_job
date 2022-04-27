@@ -21,11 +21,11 @@ onLikeClicked,
 onRemoveCardClicked
 } : CardItemProps) => {
     return (
-        <div key={id} style={style} className={`card_item ${isLiked ? 'card_item-liked' : ''}`}>
+        <div key={id} style={style} className='card_item'>
             <img src={url} alt="" className='card_item__img'/>
             <div className="card_item__buttons">
                 <div className='card_item__remove' onClick={() => onRemoveCardClicked(id)}>Remove</div>
-                <div className='card_item__toggle_like' onClick={() => onLikeClicked(id)}>{isLiked ? 'Unlike' : 'Like'}</div>
+                <div className={`card_item__toggle_like ${isLiked ? 'card_item__toggle_like-active' : ''}`} onClick={() => onLikeClicked(id)}/>
             </div>
             <div className='card_item__description'>{description}</div>
         </div>
