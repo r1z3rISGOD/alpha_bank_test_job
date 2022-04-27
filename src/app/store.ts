@@ -1,17 +1,25 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import {configureStore, createSlice} from '@reduxjs/toolkit';
+import {toggleLike, setCardsData, showOriginCards, showFilteredCards, removeCard} from "./actions";
+
+const feedSlice = createSlice({
+    name: 'alfa',
+    initialState: {
+        cardsData: [],
+        filteredCardsData: [],
+        showFilteredCardsData: false
+    },
+    reducers: {
+        toggleLike,
+        setCardsData,
+        showOriginCards,
+        showFilteredCards,
+        removeCard
+    }
+})
 
 export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+    reducer: feedSlice.reducer
 });
 
 export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.getState>;
-export type AppThunk<ReturnType = void> = ThunkAction<
-  ReturnType,
-  RootState,
-  unknown,
-  Action<string>
->;
