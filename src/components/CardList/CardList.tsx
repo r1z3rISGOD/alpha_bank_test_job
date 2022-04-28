@@ -1,8 +1,8 @@
-import {CardItem} from "../CardItem/CardItem";
+import {CardItem} from "../CardItem";
 import {useAppDispatch, useAppSelector} from "../../store/hooks";
 import {actions} from "../../store/actions";
 import {List} from "react-virtualized";
-import {FilterButton} from "../FilterButton/FilterButton";
+import {FilterButton} from "../FilterButton";
 import './CardList.css'
 import React from "react";
 
